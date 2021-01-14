@@ -1,6 +1,6 @@
-import React from 'react';
-import * as ReactDOM from 'react-dom';
+import React from "react";
+import * as ReactDOM from "react-dom";
 
-import App from './components/App';
+import App from "./components/App";
 
-ReactDOM.render(<App color="RED" />, document.getElementById('root'));
+ReactDOM.render(<App color="RED" />, document.getElementById("root"));
