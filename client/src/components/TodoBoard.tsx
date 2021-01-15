@@ -26,15 +26,15 @@ const ListContainer = styled.div`
 `;
 
 function Board() {
-  const [todoList, setTodoList] = useState<number[]>([]);
+  const [todoLists, setTodoLists] = useState<number[]>([]);
 
-  const handleAddButton = () => setTodoList([...todoList, 1]);
+  const handleAddButton = () => setTodoLists([...todoLists, 1]);
 
   return (
     <BoardStyle>
       <AddButton right handler={handleAddButton} />
       <ListContainer>
-        {todoList.length !== 0 && todoList.map((v, i) => <TodoList key={`list${i.toString()}`} />)}
+        {todoLists.length !== 0 && todoLists.map((v, i) => <TodoList key={`list${i.toString()}`} />)}
       </ListContainer>
     </BoardStyle>
   );
