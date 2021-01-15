@@ -33,7 +33,9 @@ function Board() {
   return (
     <BoardStyle>
       <AddButton right handler={handleAddButton} />
-      <ListContainer>{todoList.length !== 0 && todoList.map(() => <TodoList />)}</ListContainer>
+      <ListContainer>
+        {todoList.length !== 0 && todoList.map((v, i) => <TodoList key={`list${i.toString()}`} />)}
+      </ListContainer>
     </BoardStyle>
   );
 }
