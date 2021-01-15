@@ -1,14 +1,12 @@
 import * as React from 'react';
 import { ThemeProvider } from 'styled-components';
 import theme from '@/styles/theme';
+import TodayPage from '@/pages/TodayPage';
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <div>
-        <h1>Welcome to React with Typescript</h1>
-        <p>The color of this page is: </p>
-      </div>
+      <TodayPage />
     </ThemeProvider>
   );
 }
