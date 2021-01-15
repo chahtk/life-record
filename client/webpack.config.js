@@ -23,6 +23,9 @@ module.exports = {
   resolve: {
     // 파일 확장자 처리
     extensions: ['.ts', '.tsx', '.js'],
+    alias: {
+      '@': path.resolve(__dirname, 'src'),
+    },
   },
 
   plugins: [
