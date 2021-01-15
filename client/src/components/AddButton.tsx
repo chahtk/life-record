@@ -7,7 +7,8 @@ interface StyleProps {
 }
 
 interface Props extends StyleProps {
-  handler: () => void;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  handler: (e: any) => void;
 }
 
 const AddButtonStyle = styled.button<StyleProps>`
